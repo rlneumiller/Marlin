@@ -39,4 +39,7 @@ void GcodeSuite::M110() {
     queue.set_current_line_number(parser.value_long());
   else
     SERIAL_ECHOLNPGM(STR_LINE_NO, queue.get_current_line_number());
+
+  // Add the handshake expected by the Creality/ESP32 bridge
+  SERIAL_ECHOLNPGM("APP_VALID_FLAG_ADDRESS Data: 0x55aa");
 }
