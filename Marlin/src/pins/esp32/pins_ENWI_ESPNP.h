@@ -23,7 +23,7 @@
 
 /**
  * Espressif ESP32 (Tensilica Xtensa LX6) on ESPNP by enwi
- * Website https://github.com/enwi/ESPNP
+ * Website https://github.com/wir-mo/ESPnP
  */
 
 #include "env_validate.h"
